@@ -98,11 +98,11 @@
 
             .item {
                 border: 5px solid aliceblue;
-                margin: 15px 30px 15px 0;
+                margin: 15px 2% 15px 0;
             }
 
                 .item.thumb {
-                    width: 45%;
+                    width: 43%;
                     height: 9em;
                     position: relative;
                     display: inline-block;
