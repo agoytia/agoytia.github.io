@@ -127,3 +127,47 @@ function bedroomOFFClick()
 }
 
 bedroomOFFbtn.addEventListener('click', bedroomOFFClick, false);
+
+//Switch TV Input to ChromeCast Button
+var chromecastBtn = document.getElementById("inputToChromecast");
+
+function chromecastClick()
+{
+    getRequest('http://192.168.0.8:3000/piApi/tv/input/chromecast');
+    alert("Changed TV input to Chromecast");
+}
+
+chromecastBtn.addEventListener('click', chromecastClick, false);
+
+//Switch TV Input to Cable Button
+var cableBtn = document.getElementById("inputToCable");
+
+function cableClick()
+{
+    getRequest('http://192.168.0.8:3000/piApi/tv/input/cable');
+    alert("Changed TV input to Cable");
+}
+
+cableBtn.addEventListener('click', cableClick, false);
+
+//Turn TV On
+var tvOnBtn = document.getElementById("tvTurnON");
+
+function tvONClick()
+{
+    getRequest('http://192.168.0.8:3000/piApi/tv/on');
+    alert("Turned the TV On");
+}
+
+tvOnBtn.addEventListener('click', tvONClick, false);
+
+//Turn TV Off
+var tvOffBtn = document.getElementById("tvTurnOFF");
+
+function tvOFFClick()
+{
+    getRequest('http://192.168.0.8:3000/piApi/tv/off');
+    alert("Turned the TV Off");
+}
+
+tvOffBtn.addEventListener('click', tvOFFClick, false);

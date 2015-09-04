@@ -98,14 +98,14 @@
 
             .item {
                 border: 5px solid aliceblue;
-                margin: 15px 2% 15px 0;
+                margin: 2% 1% 2% 1%;
             }
 
                 .item.thumb {
-                    width: 43%;
+                    width: 44%;
                     height: 9em;
-                    position: relative;
                     display: inline-block;
+                    float: left;
                 }
 
                     .item.thumb h2 {
@@ -156,14 +156,14 @@
                 overflow: hidden;
             }
 
-            .inline {
-                display: inline-block;
-                width: 45%;
+            .item.thumb.inline {
+                float: right;
             }
 
 .buttonBar {
     background-color: aliceblue;
     text-align: center;
+    height: 60px;
 }
 
 .buttonHeader {
@@ -173,5 +173,5 @@
 }
 
 #reel {
-    padding: 45px;
+    padding: 5%;
 }
