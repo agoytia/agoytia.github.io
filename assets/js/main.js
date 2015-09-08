@@ -171,3 +171,13 @@ function tvOFFClick()
 }
 
 tvOffBtn.addEventListener('click', tvOFFClick, false);
+
+//Code to launch Netflix App
+var nflxBtn = document.getElementById("nflxBtn");
+
+function nflxBtnClick()
+{
+   window.location('nflx://www.netflix.com/');
+}
+
+nflxBtn.addEventListener('click', nflxBtnClick, false);
