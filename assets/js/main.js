@@ -177,8 +177,7 @@ var nflxBtn = document.getElementById("nflxBtn");
 
 function nflxBtnClick()
 {
-   window.location("nflx://www.netflix.com/");
-    alert('Button has been pushed');
+    window.open("intent://www.netflix.com/#Intent;scheme=nflx;package=com.netflix.mediclient;S.browser_fallback_url=http%3A%2F%2Fwww.netflix.com;end", "_blank");
 }
 
 nflxBtn.addEventListener('click', nflxBtnClick, false);
