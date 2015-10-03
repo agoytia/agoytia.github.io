@@ -177,7 +177,7 @@ var nflxBtn = document.getElementById("nflxBtn");
 
 function nflxBtnClick()
 {
-    window.open("intent://www.netflix.com/#Intent;action=android.intent.action.VIEW;scheme=nflx;package=com.netflix.mediaclient;S.browser_fallback_url=http%3A%2F%2Fwww.netflix.com;end", "_blank");
+    window.location.assign("intent://www.netflix.com/#Intent;action=android.intent.action.VIEW;scheme=nflx;package=com.netflix.mediaclient.ui.launch.NetflixComLaunchActivity;end", "_blank");
 }
 
 nflxBtn.addEventListener('click', nflxBtnClick, false);
