@@ -172,12 +172,3 @@ function tvOFFClick()
 
 tvOffBtn.addEventListener('click', tvOFFClick, false);
 
-//Code to launch Netflix App
-var nflxBtn = document.getElementById("nflxBtn");
-
-function nflxBtnClick()
-{
-    window.location.assign("intent://www.netflix.com/#Intent;action=android.intent.action.VIEW;scheme=nflx;package=com.netflix.mediaclient.ui.launch.NetflixComLaunchActivity;end", "_blank");
-}
-
-nflxBtn.addEventListener('click', nflxBtnClick, false);
